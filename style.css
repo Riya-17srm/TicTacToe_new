@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color:blueviolet ;
+    color: aliceblue;
+    height: 5vw;
+    display: flex;
+   align-items: center;
+   font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+    padding: 1%;
+    font-size: 1vw;
+    font-weight:bold;
+}
+.gameContainer{
+    display:flex;
+    background-color: rgb(240, 240, 111);
+    justify-content: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.box:hover{
+ background-color: rgb(228, 210, 244);
+
+}
+
+.won{
+    display: none;
+    width:20vw;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.gameInfo{
+     padding: 2vw 5vw;
+}
+
+.info{
+ font-size: 5vh;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding:10px;
+ 
+}
+
+#reset{
+    padding: 10px;
+    font-size: 2.5vh;
+    background-color: rgb(228, 218, 237);
+    border: 5px solid blueviolet;
+    border-radius: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor:pointer;
+}
