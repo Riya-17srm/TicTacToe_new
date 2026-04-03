@@ -4,45 +4,56 @@
 }
 
 nav{
-    background-color:blueviolet ;
-    color: aliceblue;
+    background-color:rgb(48, 29, 12) ;
+    color: rgb(240, 231, 210);
     height: 5vw;
     display: flex;
    align-items: center;
-   font-family: 'Roboto', sans-serif;
+   justify-items: center;
+   font-family: 'Times New Roman', Times, serif;
+
 }
 nav ul{
     list-style-type: none;
     padding: 1%;
-    font-size: 1vw;
+    font-size: 1.8vw;
     font-weight:bold;
 }
 .gameContainer{
+    margin-top: 25px;
     display:flex;
-    background-color: rgb(240, 240, 111);
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     justify-content: center;
-
+    padding: 100px;
 }
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
-    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 11vw);
+    grid-template-rows: repeat(3, 11vw);
+   
 }
 
 .box{
-    border: 1px solid black;
+    border: 6px solid rgb(46, 28, 15);
+    background-color: rgba(233, 186, 147, 0.463);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5vw;
+    font-weight:540;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    color: rgb(14, 6, 2);
+    
 }
 
+
 .box:hover{
- background-color: rgb(228, 210, 244);
+ background-color: rgb(244, 226, 210, 0.5);
 
 }
 
@@ -51,25 +62,67 @@ nav ul{
     width:20vw;
     border-radius: 25px;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .gameInfo{
      padding: 2vw 5vw;
+     font-size: 1rem;
+     color: rgb(247, 230, 201);
+     border:2px solid black;
+     margin-left:100px;
+     display:flex;
+     flex-direction: column;
+     background-color:rgba(43, 25, 9, 0.5) ;
+      font-size: 3.5vh;
+
 }
 
 .info{
- font-size: 5vh;
- font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- padding:10px;
+ font-size: 6vh;
+ font-family:'Times New Roman', Times, serif;
+ padding:20px 0px ;
  
 }
 
 #reset{
     padding: 10px;
-    font-size: 2.5vh;
-    background-color: rgb(228, 218, 237);
-    border: 5px solid blueviolet;
+    font-size: 5vh;
+    background-color: rgb(240, 213, 183);
+    border: 5px solid rgb(48, 37, 16);
     border-radius: 7px;
     font-family: 'Times New Roman', Times, serif;
     cursor:pointer;
+    width: 265px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:900px) {
+
+    .gameContainer{
+        flex-wrap: wrap;
+       padding:25px;
+    }
+    .container{
+    
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+   
+}
+    .box{
+        font-size: 3.5rem;
+    }
+    .gameInfo{
+        margin-top: 50px;
+        font-size: larger;
+        margin-left:0;
+    }
+    
+    #reset{
+        font-size: 3vh;
+        width:190px;
+        align-self: center;
+        margin-top: 5px;
+    }
+    
 }

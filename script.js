@@ -1,4 +1,5 @@
 let btn=document.querySelector('#reset');
+let turn_info=document.querySelector('.info')
 let gameOver=false;
 function reset(){
 let boxes=document.getElementsByClassName('box');
@@ -62,6 +63,7 @@ Array.from(box).forEach(element=>{
         let audioTurn=new Audio("play.mp3")
         audioTurn.volume=0.2;
         audioTurn.play();
+        turn_info.innerText=`Turn for ${turn}`;
         checkWin();
              if(c===9 && !gameOver)
         {
